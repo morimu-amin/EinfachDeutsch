@@ -30,5 +30,5 @@ PC版ではWebSpeech APIを使用した音声読み上げ機能により聞き�
 覚えるべき単語を学習できるので、学習効率の改善が期待されるのではと考えています。<br><br>
 
 # 使用言語など
-使用言語：Javascript/HTML (Pug)/CSS (Sass)<br>
+使用言語：Javascript, HTML (Pug)/CSS (Sass)<br>
 使用ツール：gulp, Firebase, Github<br>
