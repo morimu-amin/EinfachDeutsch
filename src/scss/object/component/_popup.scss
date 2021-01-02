@@ -1,0 +1,69 @@
+.c-popup__rule {
+  list-style-type: none;
+  @include mq(){
+    display: none;
+  }
+}
+
+.c-popup__close-btn {
+  position: absolute;
+  right: $padding10px;
+  top: $padding10px;
+  text-align: center;
+  cursor: pointer;
+  @include mq(){
+    @include fs(24);
+  }
+}
+
+.c-popup-btn{
+  position: fixed;
+  bottom: $padding50px;
+  left: $padding10px;
+  color: $startBtnSdw;
+  &.c-popup-btn-pc {
+    color: $backBtnColor;
+  }
+  @include mq(){
+      @include fs(24);
+      left:$padding30px;
+    }
+}
+
+.c-popup__close-btn__img{
+  color: #fff;
+}
+
+.c-popup__text {
+  color: #fff;
+  text-align: center;
+  &.c-popup__text-title {
+    @include fs(26);
+    font-family: $titleFont;
+    @include mq(){
+    @include fs(36);
+  }
+}
+  &.c-popup__rule-text{
+    @include fs(22);
+    @include mq(){
+      display: none;
+    }
+  }
+
+  &.c-popup__rule-title {
+    font-weight: bold;
+    @include fs(20);
+    @include mq(){
+      @include fs(25);
+    }
+  }
+}
+
+.c-popup__rule-pc {
+  display: none;
+  list-style-type: none;
+  @include mq(){
+  display: block;
+  }
+}

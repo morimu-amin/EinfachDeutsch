@@ -1,0 +1,56 @@
+doctype html
+html(lang="de")
+  include _include/_head.pug
+  
+  body
+  div.l-main.l-main-pc-mode
+    div.l-desc__wrapper
+      p#js-hide.p-game-desc__text Listen and type the words!
+      p.p-sound__text.c-sound-text_grid
+        <i class="fas fa-volume-up fa-lg c-img-volume"></i>
+        | turn on the sound! 
+    ul.l-game__wrapper.c-game-display_grid
+      div
+        li.c-game-img
+          a#js-replay
+          img.u-image_margin-pc#js-image
+        li#js-start.c-btn.c-btn-start.c-border_hidden  
+          p#js-answer.p-start-btn__text Start!
+      div    
+        li#js-display1.c-input.u-display_hidden  
+          input.c-form__input#js-target(type="text" autofocus) 
+        li#js-display2.u-display_hidden
+          a.c-btn__show-answer#js-show-answer
+            p.c-btn__show-answer_text Antwort
+    p#js-result.p-result__text
+    div.l-back__wrapper  
+      a.c-btn-back(href ="index.html")
+        p.p-btn-back__text <i class="fas fa-angle-left c-img-left"></i> Top  
+      p.p-caution__text.u-caution_margin This programm is recommended using by Google Chrome or Firefox.
+    div.l-popup#js-popup
+      div.l-popup-inner
+        div.c-popup__close-btn#js-close-btn <i class="far fa-times-circle fa-2x c-popup__close-btn__img"></i>
+        h2.c-popup__text.c-popup__text-title.u-popup__text-title_margin Deutsches Alphabet
+        p.c-popup__text.c-popup__rule-text.u-pop__rule-text_margin long tap 
+          span.u-pop__rule-text_bold [a,o,u,s]<br> 
+          |→ 
+          span.u-pop__rule-text_bold [ä,ö,ü,ß]
+        ul.c-popup__rule.u-pop__rule_margin 
+          li.c-popup__text.c-popup__rule-title 【iPhone】
+          li.c-popup__rule-img
+            img(src="img/ForiPhone.png")
+        ul.c-popup__rule
+          li.c-popup__text.c-popup__rule-title 【Android】
+          li.c-popup__rule-img
+            img(src="img/ForAndroid.png")
+        ul.c-popup__rule-pc
+          li.c-popup__text.c-popup__rule-title.u-pop__rule_margin 【Keyboard for PC】
+          li.c-popup__rule-img
+            img(src="img/Deutsche_Tastatur.jpg")
+      div.l-popup-bg
+    button.c-popup-btn.c-popup-btn-pc#js-show-popup <i class="far fa-question-circle fa-2x c-img-guide"></i>
+    audio#js-correct(src="../audio/correct.mp3")
+    audio#js-gameSet(src="../audio/gameSet.mp3")
+    include _include/_footer.pug
+    
+    script(src="js/pc-section1.js")

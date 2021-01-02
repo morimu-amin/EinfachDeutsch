@@ -1,0 +1,140 @@
+@import "foundation/_foundation";
+
+.p-footer__copyright{
+    color: $footerColor;
+    @include fs(10);
+}
+
+.p-title-text {
+  font-family: $titleFont;
+  font-weight: bold;
+  @include fs(60);
+  line-height: 1.3;
+  color: $titleWhite;
+  text-shadow:
+  3px -3px 0 $textSdw,
+  2px -4px 0 $textSdw,
+  2px -3px 0 $textSdw,
+  1px -2px 0 $textSdw,
+  1px -1px 0 $textSdw,
+  0px -1px 0 $textSdw,
+  -1px -3px 0 $textSdw,
+  -1px -3px 0 $textSdw,
+  -1px -2px 0 $textSdw,
+  -2px 0px 0 $textSdw,
+  -2px 1px 0 $textSdw,
+  -2px 1px 0 $textSdw,
+  -2px 2px 0 $textSdw,
+  -3px 2px 0 $textSdw,
+  -3px 3px 0 $textSdw,
+  -4px 4px 0 $textSdw,
+  -5px 4px 0 $textSdw,
+  -6px 5px 0 $textSdw,
+  -7px 6px 0 $textSdw,
+  -8px 7px 0 $textSdw,
+  -9px 8px 0 $textSdw,
+  -10px 9px 0 $textSdw;
+  transform: rotate(-15deg);
+  @include mq(){
+    transform: rotate(-5deg);
+  }
+}
+
+.p-game-desc__text {
+  @include fs(18);
+  font-weight: bold;
+  @include mq(){
+    @include fs(28);
+  }
+}
+
+.p-game__text {
+  @include fs(28);
+  padding-top: 0.75rem;
+  text-align: center;
+  line-height: 1;
+  user-select: none;
+  font-family: $fontFamily;
+}
+
+.p-game__text-pc {
+  @include fs(18);
+  text-align: center;
+  line-height: 1;
+  user-select: none;
+  font-family: $fontFamily;
+}
+
+.p-sound__text {
+  @include fs(15);
+  @include mq(){
+    @include fs(22);
+  }
+}
+
+.p-start-btn__text {
+  position: relative;
+  display: block;
+  padding: 1.25rem 2rem 1.25rem 2rem;
+  transition: all 0.3s;
+  border: 2px solid $btn-textClr;
+  border-radius: inherit;
+  background: $startBtnTop;
+  @include fs(26);
+  text-align: center;
+  line-height: 1;
+  @include mq(){
+    @include fs(36);
+    padding: 1.5rem 3rem;
+  }
+}
+
+.p-result__text {
+  padding-top: $padding10px;
+  letter-spacing: 0;
+  font-weight: bold;
+  @include fs(18);
+}
+
+.p-btn-back__text {
+  @include fs(20);
+  font-weight: bold;
+  color: $btn-textClr;
+  padding-left: 0.5em;
+  @include mq(){
+    @include fs(25);
+  }
+}
+
+.p-menu-text {
+  @include fs(22);
+  font-weight: bold;
+}
+
+.p-menu-section_text {
+  text-align: center;
+}
+
+.p-section__btn-text {
+  padding-right: 1rem;
+  padding-left: 1rem;
+  @include mq(){
+    padding-right: .3rem;
+    padding-left: .3rem;
+}
+}
+
+.p-show-answer__text {
+ @include mq(){
+    @include fs(24);
+  }
+}
+
+.p-score__text {
+  @include fs(24);
+  font-weight: bold;
+}
+
+.p-caution__text {
+  @include fs(14);
+}

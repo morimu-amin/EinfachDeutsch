@@ -1,0 +1,11 @@
+@import "foundation/_foundation";
+
+.l-footer {
+  position: absolute;
+  bottom: 0;
+  padding-top: $padding10px;
+  padding-bottom: $padding10px;
+  background-color: $footerBg;
+  width: 100%;
+  text-align: center;
+}

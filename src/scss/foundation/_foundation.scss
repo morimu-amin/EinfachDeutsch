@@ -1,0 +1,55 @@
+$fontFamily: 'Hiragino Kaku Gothic Pro','ヒラギノ角ゴ Pro W3','メイリオ',Meiryo,'ＭＳ Ｐゴシック', sans-serif;
+$titleFont: 'Shrikhand', cursive;
+$titleWhite: #F5ECCF;
+$textSdw: #212121;
+$basicBlack: #000;
+$btn-textClr: #212529;
+$btnTop-mobileBg: #fff666;
+$btnSdw-mobileBg:#ccc100;
+$btnTop-pcBg: #ff7200;
+$btnSdw-pcBg:	#cc5b00;
+$startBtnTop: #8eff00;
+$startBtnSdw: #71cc00;
+$backBtnColor: #F6F3C9;
+$gameWhite: #FAFFFB;
+$volumeLogo: #E82C2E;
+$next-replayBtnBg:#3498db;
+$nextBtnDisabled: #93bfdc;
+$correctGrrenBg: #b0debb;
+$correctTxt:#155724;
+$errorRedBg:#f8d8da;
+$errorTxt:#721c24;
+$replayBtnColor: #8AC2E5;
+$AnswerTxtColor:#EA4073;
+$pcModeBg: #ffaa66;
+$footerColor:#fff;
+$footerBg:#21221c;
+$footer: 37px;
+$padding5px: 0.3125rem;
+$padding10px: 0.625rem;
+$padding20px: 1.25rem;
+$padding30px: 1.875rem;
+$padding50px: 3.125rem;
+$padding60px: 3.75rem;
+$padding80px: 5rem;
+$padding100px: 6.25rem;
+$maxWidth: 1230px;
+$main-bg: #c0deed;
+
+//media-query
+$bp-tablet-portrait: 900px;
+$breakpoints: (
+tb: $bp-tablet-portrait,
+)!default;
+
+@mixin mq($breakpoint: tb) {
+  @media ( min-width: #{map-get($breakpoints, $breakpoint)} ) {
+    @content;
+  }
+}
+
+//font-size
+@mixin fs($size: 24, $base: 16) {
+  font-size: $size + px;
+  font-size: ($size / $base) * 1rem;
+}

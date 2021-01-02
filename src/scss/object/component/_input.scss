@@ -1,0 +1,23 @@
+.c-input {
+  text-align: center;
+  padding-top:$padding10px;
+  padding-bottom: $padding10px;
+}
+
+.c-form__input {
+    @include fs(24);
+    letter-spacing: 1px;
+    text-align: center;
+    line-height: 1.7;
+    border: 2px solid #222;
+    border-radius: 4px;
+    width: 15.625rem;
+    outline: none;
+    font-weight: bold;
+    background: #fff;
+    box-shadow: 0 0.3rem 0 0 rgba(0, 0, 0, 0.2);
+    @include mq(){
+      @include fs(28);
+      width: 20rem;
+    }
+}

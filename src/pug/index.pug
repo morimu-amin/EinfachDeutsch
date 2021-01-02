@@ -1,0 +1,21 @@
+doctype html
+html(lang="de")
+  include _include/_head.pug
+  
+  body
+    div.l-main
+     div.c-bg-wrapper
+      div.l-content-wrapper
+        h1.p-title-text Einfach<br class="u-pc__display-none"> Deutsch!
+        div.l-mode-wrapper
+          div.c-display_grid
+            a.c-btn.c-mode__btn.c-mode__btn-mobile.u-mode_margin-right(href="menu_mobile.html")
+              p.c-mode__btn-text.c-mode__btn-text-mobile For Mobile
+                <i class="fas fa-angle-right fa-position-right c-btn-right"></i>
+            a.c-btn.c-mode__btn.c-mode__btn-pc(href="menu_pc.html")
+              p.c-mode__btn-text.c-mode__btn-text-pc For PC
+                <i class="fas fa-angle-right fa-position-right c-btn-right"></i>
+        
+    include _include/_footer.pug
+    
+    

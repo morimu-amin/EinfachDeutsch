@@ -1,0 +1,29 @@
+.c-menu_grid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.c-sound-text_grid {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.c-display_grid{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  @include mq(){
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+@include mq(){
+  .c-game-display_grid {
+    display: flex;
+    justify-content: center;
+  }
+}

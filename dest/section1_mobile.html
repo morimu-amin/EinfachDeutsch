@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Deutsche Wortschatz einfach lernen!">
+    <title>Einfach Deutsch!</title>
+    <link rel="icon" type="image/png" href="/img/favicon.png"><link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/749f9d0226.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/ress.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="l-main l-main-mobile-mode">
+      <div class="l-desc__wrapper">
+        <p class="p-game-desc__text">Select correct word!</p>
+        <p class="p-sound__text c-sound-text_grid">
+          <i class="fas fa-volume-up fa-lg c-img-volume"></i> turn on the sound!</p>
+      </div>
+      <div class="c-btn c-btn-start u-btn-start-margin" id="js-start">
+        <p class="p-start-btn__text">Start!<br></p>
+      </div>
+      <section class="l-game__wrapper u-game__display-hidden" id="js-game">
+        <div class="c-game-img"><img id="js-image"></div>
+        <ul class="c-choice-btn" id="js-choices"></ul>
+        <div class="c-next-btn u-next-btn-diabled" id="js-btn"><i class="fas fa-long-arrow-alt-right fa-2x c-arrow-right__img"></i></div>
+        <section class="l-game-result u-result-hidden" id="js-result">
+          <p class="p-score__text u-score_margin" id="js-score"></p><a class="c-replay-btn__link" href="section1_mobile.html">Replay?</a>
+        </section>
+      </section>
+      <div class="l-back__wrapper"><a class="c-btn-back" href="index.html">       
+          <p class="p-btn-back__text"><i class="fas fa-angle-left c-img-left"></i> Top</p></a></div>
+    </div>
+    <audio id="js-correct" src="audio/correct.mp3"></audio>
+    <audio id="js-error" src="audio/error.mp3"></audio>
+    <audio id="js-gameSet" src="audio/gameSet.mp3"></audio>
+    <audio id="js-perfect" src="audio/perfect.mp3"></audio>
+    <footer class="l-footer">
+      <p class="p-footer__copyright"><small>&copy; 2021 Einfach Deutsch Allrights Reserved.</small></p>
+    </footer>
+    <script src="js/mobile-section1.js"></script>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+@import "foundation/_foundation";
+
+.c-bg-wrapper {
+  background-color: $main-bg;
+  background: url(https://abs.twimg.com/images/themes/theme1/bg.png) center top repeat-x;
+  padding-top: $padding50px;
+  padding-bottom:$padding10px;
+  animation: cloudy 10s linear infinite;
+  @include mq(){
+    padding-top: $padding100px;
+  }
+  }
+
+  @keyframes cloudy {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: 100% 0;
+  };
+}

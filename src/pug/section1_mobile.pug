@@ -1,0 +1,34 @@
+
+doctype html
+html(lang="de")
+  include _include/_head.pug
+  
+  body
+    div.l-main.l-main-mobile-mode
+      div.l-desc__wrapper
+        p.p-game-desc__text Select correct word!
+        p.p-sound__text.c-sound-text_grid
+          <i class="fas fa-volume-up fa-lg c-img-volume"></i> 
+          | turn on the sound!
+      div#js-start.c-btn.c-btn-start.u-btn-start-margin
+        p.p-start-btn__text Start!<br>
+      section#js-game.l-game__wrapper.u-game__display-hidden
+        div.c-game-img
+          img#js-image
+        ul#js-choices.c-choice-btn
+        div#js-btn.c-next-btn.u-next-btn-diabled <i class="fas fa-long-arrow-alt-right fa-2x c-arrow-right__img"></i>
+        section#js-result.l-game-result.u-result-hidden
+            p#js-score.p-score__text.u-score_margin
+            a.c-replay-btn__link(href="section1_mobile.html") Replay?
+                        
+      div.l-back__wrapper
+        a.c-btn-back(href ="index.html")        
+          p.p-btn-back__text <i class="fas fa-angle-left c-img-left"></i> Top
+      
+    audio#js-correct(src="audio/correct.mp3")
+    audio#js-error(src="audio/error.mp3")
+    audio#js-gameSet(src="audio/gameSet.mp3")
+    audio#js-perfect(src="audio/perfect.mp3")
+    include _include/_footer.pug
+    
+    script(src="js/mobile-section1.js")

@@ -1,0 +1,5 @@
+.u-next-btn-diabled {
+  background: $nextBtnDisabled;
+  box-shadow: 0 3px 0 #84abc6;
+  @include fs(18);
+}

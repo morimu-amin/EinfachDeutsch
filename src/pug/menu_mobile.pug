@@ -1,0 +1,20 @@
+doctype html
+html(lang="de")
+  include _include/_head.pug
+  
+  body
+    div.l-main
+     div.c-bg-wrapper
+      div.l-section-wrapper.c-menu_grid
+        p.p-menu-text.u-menu-text_margin Welche Section?
+        a.c-btn.c-mode__btn.c-mode__btn-mobile.c-section__btn(href="section1_mobile.html")
+          p.c-mode__btn-text.c-mode__btn-text-mobile.p-section__btn-text Section 1
+        a.c-btn.c-mode__btn.c-mode__btn-mobile.c-section__btn(href="section2_mobile.html")
+          p.c-mode__btn-text.c-mode__btn-text-mobile.p-section__btn-text Section 2
+        a.c-btn.c-mode__btn.c-mode__btn-mobile.c-section__btn(href="section3_mobile.html")
+          p.c-mode__btn-text.c-mode__btn-text-mobile.p-section__btn-text Section 3
+        div.l-back__wrapper
+          a.c-btn-back(href ="index.html")
+            p.p-btn-back__text <i class="fas fa-angle-left c-img-left"></i> Top    
+        
+    include _include/_footer.pug

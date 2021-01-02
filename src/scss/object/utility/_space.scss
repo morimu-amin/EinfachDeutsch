@@ -1,0 +1,45 @@
+
+.u-image_margin {
+  margin-top: -5rem;
+}
+
+.u-image_margin-pc {
+  margin-top: -6rem;
+}
+
+@include mq(){
+  .u-pc__display-none {
+    display: none;
+  }
+}
+
+.u-caution_margin {
+  margin-top: $padding10px;
+}
+
+.u-menu-text_margin {
+  margin-bottom: $padding20px;
+}
+
+.u-pop__rule_margin,
+.u-popup__text-title_margin,
+.u-pop__rule-text_margin {
+  margin-bottom: $padding20px;
+  @include mq(){
+    margin-bottom:$padding50px;
+  }
+}
+
+@include mq(){
+  .u-game-content_margin {
+    margin-right: $padding50px;
+  }
+}
+
+.u-btn-start-margin {
+  margin-top: $padding100px
+}
+
+.u-score_margin {
+  margin-bottom: $padding20px;
+}

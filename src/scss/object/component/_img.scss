@@ -1,0 +1,31 @@
+.c-img-volume {
+  color: $volumeLogo;
+  transform: translateY(25%);
+  margin-right: 5px;
+  @include mq(){
+    margin-right: 8px;
+  }
+}
+
+.c-img-left {
+  position: absolute;
+  top: calc(50% - 0.5em);
+  left: 1rem;
+}
+
+.c-game-img {
+  padding-bottom: $padding10px;
+}
+
+.c-img__size {
+  width: 8rem;
+  height: 8rem;
+  @include mq(){
+    width: 15rem;
+    height: 15rem;
+  }
+}
+
+.c-arrow-right__img {
+  transform: translateY(3px);
+}
