@@ -1,7 +1,7 @@
 # EinfachDeutsch
 Portfolio No.2<br>
 ドイツ語講師の経験を生かして、学習科学の観点からドイツ語の単語学習アプリを制作しました。<br>
-Go to App: https://einfachdeutsch-f0305.web.app/
+[Go to App](https://einfachdeutsch-f0305.web.app/)<br>
 
 # Description
 講師時代から学習者に「単語帳を使って勉強するといいよ」とは説明するものの、<br>
